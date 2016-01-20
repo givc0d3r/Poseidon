@@ -1,16 +1,21 @@
 #!/usr/bin/python
 #_*_ coding:utf-8 _*_
 
-import urllib
-import os 
-import sys 
-import argparse
+from urllib import urlopen
+from os import name, system
+
+def Main():
+	System()
+	Banner()
+	Int_()
+	Seach()
+
 
 def System():
-	if sys.platform != "linux2":
-		os.system("clear")
+	if name == 'nt':
+		system("cls")
 	else:
-		os.system("cls")
+		system("clear")
 
 def Banner():
 	print """\n              
@@ -28,16 +33,15 @@ def Banner():
 
 \n""" 
 
-def int_():
+def Int_():
 	target =  raw_input("Target =:>")
 	word = raw_input("WordList =:>")
 
-def seach():
-	   
-    wordp = open(word, "r").readlines()
+def Seach():
+	wordp = open(word, "r").readlines()
 	for i in wordp:
 		i = i.replace("\n", "").replace("\r", "")
-		seach = urllib.urlopen(target+i)
+		seach = urlopen(target+i)
 		if seach.getcode() == 200:
 			seach = seach.read()
 			if 'Login' or 'Senha' in seach:
@@ -45,7 +49,4 @@ def seach():
 			else:
 				print "[-] Não Encontrada"+target+i+""
 
-Banner()
-int_()
-System()
-seach()
+Main()
