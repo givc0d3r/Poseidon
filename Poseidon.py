@@ -18,16 +18,27 @@ def System():
 
 def Banner():
 	print """\n\033[1;32m              
-	                   .__=\__                  .__==__,                                                       
-                      jf'      ~~=\,         _=/~'      `\,                                                     
-                  ._jZ s0F_t_wAR-3 `\q,   /=~   vI._rU-5  `\__                                                  
-                 j5(/          ...    `\./         AND...   V\\,                 
-               .Z))' _____    dEv  c0De |   ...       .____, \)/\                          
-              j5(K=~~     ~~~~\=_,      |      _/=~~~~'    `~~+K\\,                            
-            .Z)\/                `~=L   |  _=/~                 t\ZL                             
-           j5(_/.__/===========\__   ~q |j/   .__============___/\J(N,                                          
-          4L#XXXL_________________XGm, \P  .mXL_________________JXXXW8L                                         
-          ~~~~~~~~~~~~~~~~~~~~~~~~~YKWmmWmmW@~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+	                       .                                                      .
+        .n                   .                 .                  n.
+  .   .dP                  dP                   9b                 9b.    .
+ 4    qXb         .       dX                     Xb       .        dXp     t
+dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+ 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
+  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
+    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'
+        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
+                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
+                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
+                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
+                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
+                     `'      9XXXXXX(   )XXXXXXP      `'
+                              XXXX X.`v'.X XXXX
+                              XP^X'`b   d'`X^XX
+                              X. 9  `   '  P )X
+                              `b  `       '  d'
+                               `             ' 
               
                   \033[0;36m- Coded By D3m0l1d0r & Pedro Souza -\033[0m 
 
