@@ -43,6 +43,8 @@ def Seach():
 			seach = seach.read()
 			if 'Login' or 'Senha' in seach:
 				print "\033[0;32m[+] Encontrada: "+target+i+"\033[0m"
+			else:
+				print "\033[0;31m[-] Não Encontrada : "+target+i+"\033[0m"
 		else:
 			print "\033[0;31m[-] Não Encontrada : "+target+i+"\033[0m"
 
