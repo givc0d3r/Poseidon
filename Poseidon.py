@@ -7,7 +7,6 @@ from os import name, system
 def Main():
 	System()
 	Banner()
-	Int_()
 	Seach()
 
 
@@ -29,23 +28,24 @@ def Banner():
            j5(_/.__/===========\__   ~q |j/   .__============___/\J(N,                                          
           4L#XXXL_________________XGm, \P  .mXL_________________JXXXW8L                                         
           ~~~~~~~~~~~~~~~~~~~~~~~~~YKWmmWmmW@~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-                       Coded By D3m0l1d0r & Pedro Souza    
+                      - Coded By D3m0l1d0r & Pedro Souza -   
 \n""" 
 
-def Int_():
+def Seach():
 	target =  raw_input("Target =:>")
 	word = raw_input("WordList =:>")
-
-def Seach():
 	wordp = open(word, "r").readlines()
+
 	for i in wordp:
 		i = i.replace("\n", "").replace("\r", "")
 		seach = urlopen(target+i)
 		if seach.getcode() == 200:
 			seach = seach.read()
 			if 'Login' or 'Senha' in seach:
-				print "[+] Encontrada: "+target+i+""
-			else:
-				print "[-] Não Encontrada"+target+i+""
+				print "\033[0;32m[+] Encontrada: "+target+i+"\033[0m"
+		else:
+			print "\033[0;31m[-] Não Encontrada : "+target+i+"\033[0m"
+
+
 
 Main()
