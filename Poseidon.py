@@ -17,7 +17,7 @@ def System():
 		system("clear")
 
 def Banner():
-	print """\n              
+	print """\n\033[1;32m              
 	                   .__=\__                  .__==__,                                                       
                       jf'      ~~=\,         _=/~'      `\,                                                     
                   ._jZ s0F_t_wAR-3 `\q,   /=~   vI._rU-5  `\__                                                  
@@ -28,12 +28,14 @@ def Banner():
            j5(_/.__/===========\__   ~q |j/   .__============___/\J(N,                                          
           4L#XXXL_________________XGm, \P  .mXL_________________JXXXW8L                                         
           ~~~~~~~~~~~~~~~~~~~~~~~~~YKWmmWmmW@~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-                      - Coded By D3m0l1d0r & Pedro Souza -   
-\n""" 
+              
+                  \033[0;36m- Coded By D3m0l1d0r & Pedro Souza -\033[0m 
+
+\n\033[0m""" 
 
 def Seach():
-	target =  raw_input("Target =:>")
-	word = raw_input("WordList =:>")
+	target =  raw_input("\033[0;37mTarget =:>\033[0m")
+	word = raw_input("\033[0;37mWordList =:>\033[0m")
 	wordp = open(word, "r").readlines()
 
 	for i in wordp:
@@ -43,8 +45,6 @@ def Seach():
 			seach = seach.read()
 			if 'Login' or 'Senha' in seach:
 				print "\033[0;32m[+] Encontrada: "+target+i+"\033[0m"
-			else:
-				print "\033[0;31m[-] Não Encontrada : "+target+i+"\033[0m"
 		else:
 			print "\033[0;31m[-] Não Encontrada : "+target+i+"\033[0m"
 
